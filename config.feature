@@ -3,8 +3,7 @@
 Funcionalidade: Product Configuration
 
   Como cliente da EBAC-SHOP,
-  Eu quero configurar meu produto de acordo com meu tamanho e gosto
-  E escolher a quantidade
+  Eu quero configurar meu produto de acordo com meu tamanho, gosto e quantidade
   Para depois inserir no carrinho
 
   Contexto:
@@ -32,12 +31,15 @@ Funcionalidade: Product Configuration
   Cenário: Quebra de limite máximo de quantidade por venda
     Quando tento adicionar 11 unidades de um produto ao carrinho
     Então devo ver uma mensagem informando que excedi o limite de 10 produtos por venda
-    E devo poder continuar a configuração de minha compra
 
   Cenário: Limpar seleções com o botão "Limpar"
     Dado que configuro o produto com cor "Azul", tamanho "M" e quantidade "2"
     Quando clico no botão "Limpar"
-    Então as seleções de cor, tamanho e quantidade devem ser redefinidas para o estado original
-    E o produto no carrinho deve ser exibido sem qualquer configuração
+    Então a configuração do produto deve ser redefinidas para o estado original
 
 
+
+
+
+
+    
